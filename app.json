@@ -2,7 +2,7 @@
   "expo": {
     "name": "Atomic Press",
     "slug": "atomic-press",
-    "version": "0.1.7",
+    "version": "0.2.2",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
@@ -17,13 +17,13 @@
     ],
     "ios": {
       "bundleIdentifier": "com.robotlions.atomicpress",
-      "buildNumber": "0.1.7",
+      "buildNumber": "0.2.2",
       "supportsTablet": true
     },
     "android": {
       "permissions": [],
       "package": "com.robotlions.atomicpress",
-      "versionCode": 4,
+      "versionCode": 5,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"

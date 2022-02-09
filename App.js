@@ -24,8 +24,7 @@ import {
 import { firstName, lastName } from "./Components/TitleList50s";
 import { styles } from "./styles";
 
-SplashScreen.preventAutoHideAsync();
-setTimeout(SplashScreen.hideAsync, 3000);
+
 
 export default function App() {
   const [recipeName, setRecipeName] = useState("default name");
@@ -63,7 +62,9 @@ export default function App() {
     },
   ];
 
+
   useEffect(() => {
+    
     onLoad == false ? loadStartupRecipe() : null;
   });
 
@@ -93,7 +94,7 @@ export default function App() {
           uri: require("./assets/fonts/RammettoOne-Regular.ttf"),
         },
       });
-      setFontsLoaded(true);
+    
     } catch (e) {}
   };
 
@@ -286,3 +287,4 @@ export default function App() {
     );
   }
 }
+

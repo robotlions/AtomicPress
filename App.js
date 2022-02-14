@@ -48,7 +48,8 @@ export default function App() {
   const [recipeAddedText, setRecipeAddedText] = useState("");
   const [fontsLoaded, setFontsLoaded] = useState(false);
   const [modalWhatIsThisVisible, setModalWhatIsThisVisible] = useState(false);
-
+  const [recipeGenerated, setRecipeGenerated] = useState(false);
+  
   const defaultRecipe = [
     {
       recipeName: "Default Diner Coffee",
@@ -156,12 +157,11 @@ export default function App() {
             AsyncStorage.setItem("recipeList", JSON.stringify(loadedRecipe))
           )
           .then(() => getArray());
-    setTimeout(() => {
-      setRecipeAddedText("Recipe Added!");
-    }, 100);
-    setTimeout(() => {
-      setRecipeAddedText("");
-    }, 2000);
+    
+    alert("Recipe Added!");
+    setModalNewRecipeVisible(false);
+      setRecipeName("");setRatio("");setGrindSize("");setAgitation("");setTemperature("");setBrewStyle("");setRecipeGenerated(false);
+    
   }
 
 
@@ -206,17 +206,20 @@ export default function App() {
                       setAttribute(setAgitation, agitationArray),
                       setAttribute(setTemperature, temperatureArray),
                       setAttribute(setBrewStyle, brewStyleArray);
+                      setRecipeGenerated(true);
                   }}
                 >
                   <Text style={styles.buttonText}>Try Again</Text>
                 </TouchableOpacity>
-                <Text>      </Text>
+                
+                
+                {recipeGenerated == true &&
                 <TouchableOpacity
                   style={styles.button}
                   onPress={() => saveRecipe()}
                 >
-                  <Text style={styles.buttonText}>Save Recipe</Text>
-                </TouchableOpacity>
+                  <Text style={styles.buttonText}>    Save Recipe</Text>
+                </TouchableOpacity>}
                 {"\n"}
               </Text>
 
@@ -268,6 +271,7 @@ export default function App() {
                 setAttribute(setAgitation, agitationArray),
                 setAttribute(setTemperature, temperatureArray),
                 setAttribute(setBrewStyle, brewStyleArray);
+                setRecipeGenerated(true);
             }}
           >
             <Text style={styles.bottomButtonText}>New Brew</Text>

@@ -54,6 +54,15 @@ export const firstName = [
 "Jack",
 "Montgomery",
 "Zsa-Zsa",
+"Nina",
+"Sammy",
+"Lena",
+"Big Joe",
+"The Big",
+"Screamin' Jay",
+"Chubby",
+"Althea",
+"Harry",
 ]
 
 export const lastName = [
@@ -108,4 +117,13 @@ export const lastName = [
 "Gable",
 "Lemmon",
 "Clift",
+"Simone",
+"Davis Jr.",
+"Horne",
+"Turner",
+"Bopper",
+"Hawkins",
+"Checker",
+"Gibson",
+"Belafonte",
 ]

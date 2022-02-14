@@ -55,7 +55,7 @@ export default function WhatIsThis() {
     {"\n"}
     </Text>
     <Text style={styles.whatIsThisHeadline}>About</Text>
-    <Text style={styles.whatIsThisText}>v. 0.2.4</Text>
+    <Text style={styles.whatIsThisText}>v. 0.2.6</Text>
 
     <Text style={styles.whatIsThisText}>Based on the original AeroPress Recipe Dice concept by
     <Text style={{color: '#ea861a'}}

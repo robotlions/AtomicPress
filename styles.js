@@ -29,7 +29,7 @@ export const styles = StyleSheet.create({
   button: {},
 
   buttonText: {
-    fontSize: 20,
+    fontSize: 22,
     textAlign: "center",
     color: "#7E4B27",
     fontFamily: "Raleway-Black",
@@ -50,10 +50,11 @@ export const styles = StyleSheet.create({
     fontFamily: "Rammetto-Regular",
     textAlign: "right",
     marginRight: 5,
-    fontSize: 12,
+    fontSize: 14,
   },
 
   creditRow: {
+    height: 30,
     opacity: 0.5,
   },
 

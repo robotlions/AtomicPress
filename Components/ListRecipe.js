@@ -142,7 +142,7 @@ export default function ListRecipe(props) {
       
       <Image
         style={styles.starLogo}
-        source={require('../assets/favstar.png')}
+        source={require('../assets/images/favstar.png')}
       /> : null}
       <Text style={{lineHeight: 5}}> </Text>
         <Text style={styles.category}>Ratio: </Text>
@@ -187,7 +187,7 @@ export default function ListRecipe(props) {
       <Text style={styles.smallListHeadline}>{value.recipeName}</Text>
       {value.favorite == true ?  <Image
       style={styles.starLogo}
-        source={require('../assets/favstar.png')}
+        source={require('../assets/images/favstar.png')}
       /> : null}
       <Text style={styles.listingNote}>{value.note || ""}</Text>
       </TouchableOpacity>

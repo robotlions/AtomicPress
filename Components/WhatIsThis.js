@@ -23,7 +23,7 @@ export default function WhatIsThis() {
       Feel free to edit the recipes or to reroll from scratch. Have fun!
     </Text>
 
-    <Text style={styles.category}>{"\n"}Making Sense of the Recipes</Text>
+    <Text style={styles.whatIsThisSubhead}>{"\n"}Making Sense of the Recipes</Text>
     <Text style={styles.whatIsThisHeadline}>Ratio</Text>
     <Text style={styles.whatIsThisText}>   {"\u2b24"} Grams of coffee to milliliters of water.</Text>
     <Text style={styles.whatIsThisText}>   {"\u2b24"} <Text style={styles.italic}>Dilute to share: </Text>After brewing, add water to make multiple cups.</Text>

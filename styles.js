@@ -202,6 +202,12 @@ export const styles = StyleSheet.create({
     textAlign: "left",
   },
 
+  whatIsThisSubhead:{
+    fontSize: 18,
+    fontFamily: "Raleway-Black",
+    textAlign: "center",
+  },
+
   whatIsThisTitle: {
     fontFamily: "Raleway-Black",
     textAlign: "center",

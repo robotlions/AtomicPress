@@ -1,6 +1,11 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
+  backgroundView:{
+    backgroundColor: "rgba(52, 52, 52, 0.7)",
+    paddingBottom:75,
+  },
+  
   bottom: {
     backgroundColor: "#99CBA6",
     textAlign: "center",
@@ -26,19 +31,25 @@ export const styles = StyleSheet.create({
     color: "#7E4B27",
   },
 
-  button: {},
+  button: {
+  },
 
   buttonText: {
     fontSize: 22,
     textAlign: "center",
     color: "#7E4B27",
     fontFamily: "Raleway-Black",
+    lineHeight:48,
   },
 
   category: {
     fontFamily: "Raleway-Bold",
     paddingLeft: 15,
     fontSize: 14,
+  },
+
+  closeRow:{
+   lineHeight: 48,
   },
 
   container: {
@@ -51,11 +62,13 @@ export const styles = StyleSheet.create({
     textAlign: "right",
     marginRight: 5,
     fontSize: 14,
+    height: 35,
+    color: "gray",
+    
   },
 
   creditRow: {
-    height: 30,
-    opacity: 0.5,
+    height: 35,
   },
 
   headline: {

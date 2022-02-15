@@ -191,11 +191,7 @@ export default function App() {
               <Text style={styles.recipeText}>{temperature}</Text>
               <Text style={styles.headline}>Brew Style: </Text>
               <Text style={styles.recipeText}>{brewStyle}</Text>
-              <Text
-                style={{ marginTop: 5, marginBottom: 5, fontWeight: "bold" }}
-              >
-                {recipeAddedText}
-              </Text>
+              
               <Text>
                 <TouchableOpacity
                   style={styles.button}
@@ -241,10 +237,14 @@ export default function App() {
           setModalWhatIsThisVisible(!modalWhatIsThisVisible);
         }}
       >
-        <View style={{ backgroundColor: "rgba(52, 52, 52, 0.7)" }}>
+        <View style={styles.backgroundView}>
+        {/* <View style={{ backgroundColor: "rgba(52, 52, 52, 0.7)" }}> */}
         <View style={styles.modalView}>
         <WhatIsThis/>
-        <TouchableOpacity onPress={()=>setModalWhatIsThisVisible(false)}><Text style={styles.buttonText}>Close</Text></TouchableOpacity>
+        
+        <TouchableOpacity onPress={()=>setModalWhatIsThisVisible(false)}>
+          <Text style={styles.buttonText}>Close</Text></TouchableOpacity>
+          
         </View>
         </View>
       </Modal>

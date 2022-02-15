@@ -67,10 +67,11 @@ export const styles = StyleSheet.create({
   },
 
   input: {
-    height: 35,
+    height: 40,
     margin: 12,
     padding: 10,
     width: "85%",
+    textAlign: "center",
   },
 
   italic: {

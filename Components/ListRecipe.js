@@ -8,7 +8,6 @@ import {
   TouchableOpacity,
   Modal,
   Image,
-  Pressable,
 } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {styles} from "../styles"

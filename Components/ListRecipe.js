@@ -312,9 +312,7 @@ export default function ListRecipe(props) {
                 autoFocus={true}
               ></TextInput>
             ) : null}
-            <Text>
-              <Text>{"\n"} </Text>
-            </Text>
+            
 
             <TouchableOpacity
               style={styles.button}
@@ -326,7 +324,7 @@ export default function ListRecipe(props) {
               }}
             >
               <Text style={styles.buttonText}>Done
-              {"\n"}</Text>
+              </Text>
             </TouchableOpacity>
             <Text>
             <TouchableOpacity

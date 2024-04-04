@@ -55,7 +55,7 @@ export default function WhatIsThis() {
     {"\n"}
     </Text>
     <Text style={styles.whatIsThisHeadline}>About</Text>
-    <Text style={styles.whatIsThisText}>v. 0.2.8</Text>
+    <Text style={styles.whatIsThisText}>v. 1.1.2</Text>
 
     <Text style={styles.whatIsThisText}>Based on the original AeroPress Recipe Dice concept by
     <Text style={{color: '#ea861a'}}
@@ -66,7 +66,10 @@ export default function WhatIsThis() {
     <Text style={styles.whatIsThisText}>Check out AeroPress at</Text>
     <Text style={{color: '#ea861a'}} onPress={()=>Linking.openURL("http://www.aeropress.com")}>aeropress.com
     {"\n"}</Text>
-      <Text style={styles.whatIsThisText}>Copyright 2022 by Robot Lions. Not in any way officially associated with AeroPress.</Text>
+      <Text style={styles.whatIsThisText}>Copyright 2024 by 
+      
+      <Text style={{color: '#ea861a'}} onPress={()=>Linking.openURL("https://robotlions.com")}> Robot Lions
+    {"\n"}</Text>Not in any way officially associated with AeroPress.</Text>
     </ScrollView>
     );
 }

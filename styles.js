@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     textAlign: "center",
     alignItems: "center",
     paddingTop: 5,
-    paddingBottom: 5,
+    paddingBottom: 50,
   },
 
   bottomButton: {

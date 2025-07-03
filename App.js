@@ -165,6 +165,7 @@ export default function App() {
   }
 
 
+
   if (fontsLoaded == true) {
     return (
       <SafeAreaView style={styles.container}>

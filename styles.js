@@ -10,8 +10,8 @@ export const styles = StyleSheet.create({
     backgroundColor: "#99CBA6",
     textAlign: "center",
     alignItems: "center",
-    paddingTop: 5,
-    paddingBottom: 50,
+    justifyContent: "center",
+    paddingVertical: 15,
   },
 
   bottomButton: {

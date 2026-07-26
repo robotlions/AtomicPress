@@ -3,14 +3,15 @@ import React, { useState, useEffect } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import * as SplashScreen from "expo-splash-screen";
 import * as Font from "expo-font";
-import Apploading from "expo-app-loading";
+SplashScreen.preventAutoHideAsync();
+import { SafeAreaView } from "react-native-safe-area-context";
 import {
   Text,
   View,
   Modal,
   TouchableOpacity,
   ScrollView,
-  SafeAreaView,
+ 
 } from "react-native";
 import ListRecipe from "./Components/ListRecipe";
 import WhatIsThis from "./Components/WhatIsThis";
@@ -65,7 +66,33 @@ export default function App() {
 
 
   useEffect(() => {
-    
+    async function prepare() {
+      try {
+        await Font.loadAsync({
+          "Raleway-Bold": {
+            uri: require("./assets/fonts/Raleway-Bold.ttf"),
+          },
+          "Raleway-Medium": {
+            uri: require("./assets/fonts/Raleway-Medium.ttf"),
+          },
+          "Raleway-Black": {
+            uri: require("./assets/fonts/Raleway-Black.ttf"),
+          },
+          "Rammetto-Regular": {
+            uri: require("./assets/fonts/RammettoOne-Regular.ttf"),
+          },
+        });
+      } catch (e) {
+        console.warn(e);
+      } finally {
+        setFontsLoaded(true);
+        SplashScreen.hideAsync();
+      }
+    }
+    prepare();
+  }, []);
+
+  useEffect(() => {
     onLoad == false ? loadStartupRecipe() : null;
   });
 
@@ -77,27 +104,6 @@ export default function App() {
     setOnLoad(true);
     getArray();
   }
-
-  const loadFonts = async () => {
-    try {
-      await Font.loadAsync({
-        
-        "Raleway-Bold": {
-          uri: require("./assets/fonts/Raleway-Bold.ttf"),
-        },
-        "Raleway-Medium": {
-          uri: require("./assets/fonts/Raleway-Medium.ttf"),
-        },
-        "Raleway-Black": {
-          uri: require("./assets/fonts/Raleway-Black.ttf"),
-        },
-        "Rammetto-Regular": {
-          uri: require("./assets/fonts/RammettoOne-Regular.ttf"),
-        },
-      });
-    
-    } catch (e) {}
-  };
 
   async function getArray() {
     (await AsyncStorage.getItem("recipeList")) != null
@@ -281,15 +287,7 @@ export default function App() {
       </SafeAreaView>
     );
   } else {
-    return (
-      <Apploading
-        startAsync={loadFonts}
-        onFinish={() => {
-          setFontsLoaded(true);
-        }}
-        onError={console.warn}
-      />
-    );
+    return null;
   }
 }
 

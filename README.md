@@ -8,6 +8,12 @@
 
 Atomic Press is a free mobile app for generating, editing, and storing recipes for the [AeroPress](https://www.aeropress.com) coffee maker. Press a button and the app rolls up a completely randomized brew — with a retro-1950s name to match.
 
+<p align="center">
+  <a href="https://play.google.com/store/apps/details?id=com.robotlions.atomicpress&hl=en">
+    <img src="assets/screenshots/google-play-badge.png" alt="Get it on Google Play" width="200">
+  </a>
+</p>
+
 ## Features
 
 - **One-tap recipe generator** — Hit **New Brew** and Atomic Press rolls a random recipe, including a groovy 1950s-style name pulled from a built-in list of era-appropriate first and last names.
